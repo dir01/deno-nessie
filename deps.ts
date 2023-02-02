@@ -33,9 +33,10 @@ export type { IAction as CliffyIAction } from "https://deno.land/x/cliffy@v0.25.
 export { Client as MySQLClient } from "https://deno.land/x/mysql@v2.10.3/mod.ts";
 
 /** PostgreSQL */
-export {
-  Client as PostgreSQLClient,
-} from "https://deno.land/x/postgres@v0.17.0/mod.ts";
+export { Client as PostgreSQLClient } from "https://deno.land/x/postgres@v0.17.0/mod.ts";
 
 /** SQLite */
 export { DB as SQLiteClient } from "https://deno.land/x/sqlite@v3.5.0/mod.ts";
+
+/** SQLite3. You may want to choose this client if your database needs to use WAL mode, see https://www.sqlite.org/formatchng.html */
+export { Database as SQLite3Client } from "https://deno.land/x/sqlite3@0.7.3/mod.ts";
